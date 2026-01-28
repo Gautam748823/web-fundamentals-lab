@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+  <title>BOXING</title>
+
+  <!-- CSS Section -->
+  <style>
+    body{
+      background-color: lightyellow;
+      font-family: 'Times New Roman';
+    }
+
+    h1{
+      text-align: center;
+      color: darkred;
+    }
+
+    p{
+      width: 80%;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    article{
+      width: 80%;
+      margin: 20px auto;
+      background: lightcyan;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 15px;
+    }
+  </style>
+
+  <!-- JavaScript for Experiment-3(a) -->
+  <script>
+    function makeStatic() {
+      var img = document.getElementById("moveImg");
+      img.style.position = "static";
+      img.style.top = "0px";
+      img.style.left = "0px";
+    }
+
+    function makeRelative() {
+      var img = document.getElementById("moveImg");
+      img.style.position = "relative";
+      img.style.top = "5px";
+      img.style.left = "20px";
+    }
+
+    function makeAbsolute() {
+      var img = document.getElementById("moveImg");
+      img.style.position = "absolute";
+      img.style.top = "300px";
+      img.style.left = "200px";
+    }
+  </script>
+<!-- Drag and Drop Functionality from line 58 to 77-->
+<script>
+  var isDragging = false;
+  var box;
+
+  function startDrag(e) {
+    isDragging = true;
+    box = e.target;
+  }
+
+  function drag(e) {
+    if (isDragging) {
+      box.style.left = e.clientX + "px";
+      box.style.top = e.clientY + "px";
+    }
+  }
+
+  function stopDrag() {
+    isDragging = false;
+  }
+</script>
+
+
+</head>
+
+<body>
+
+  <h1>Boxing</h1>
+
+  <!-- Buttons -->
+  <center>
+    <input type="button" value="Static" onclick="makeStatic()">
+    <input type="button" value="Relative" onclick="makeRelative()">
+    <input type="button" value="Absolute" onclick="makeAbsolute()">
+  </center>
+
+  <br>
+
+  <!-- Image (Static by default) -->
+  <center>
+    <img src="../images/image_4.png" id="moveImg" width="150" height="150">
+  </center>
+
+  <p>
+    Boxing is a combat sport in which two people, usually wearing protective gloves
+    and other protective equipment, throw punches at each other in a boxing ring.
+    Players compete in various weight classes to ensure fair competition.
+  </p>
+
+  <article>
+    Amateur boxing is an Olympic sport and professional boxing is popular worldwide.
+    It is one of the oldest and most respected combat sports with a rich history.
+  </article>
+
+
+  <!-- Drag and Drop Section -->
+<h3 style="text-align:center;">Drag and Drop Example</h3>
+
+<div onmousemove="drag(event)" onmouseup="stopDrag()"
+     style="height:250px; border:2px solid black; margin:20px;">
+
+  <div onmousedown="startDrag(event)"
+       style="width:100px; height:100px;
+              background-color:orange;
+              position:absolute;
+              left:50px; top:50px;
+              text-align:center;
+              line-height:100px;
+              cursor:move;">
+    Drag Me
+  </div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <title>BADMINTON</title>
+
+  <style>
+    body{
+      background-color: lightyellow;
+      font-family: 'Times New Roman';
+      text-align: center;
+    }
+
+    h1{
+      text-align: center;
+      color: darkblue;
+    }
+
+    p{
+      width: 80%;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    section{
+      width: 80%;
+      margin: 20px auto;
+      background: lightcyan;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 15px;
+    }
+  </style>
+
+  <!-- JavaScript for Experiment-3(a) -->
+  <script>
+    function makeStatic() {
+      var img = document.getElementById("moveImg");
+      img.style.position = "static";
+      img.style.top = "0px";
+      img.style.left = "0px";
+    }
+
+    function makeRelative() {
+      var img = document.getElementById("moveImg");
+      img.style.position = "relative";
+      img.style.top = "20px";
+      img.style.left = "30px";
+    }
+
+    function makeAbsolute() {
+      var img = document.getElementById("moveImg");
+      img.style.position = "absolute";
+      img.style.top = "300px";
+      img.style.left = "200px";
+    }
+    function moveIt(movee, newTop, newLeft) {         /* Move the Image by giving the value in the Box*/
+    let dom = document.getElementById(movee).style;
+    dom.top = newTop + "px";
+    dom.left = newLeft + "px";
+}
+  </script>
+
+</head>
+
+<body>
+
+  <h1>Badminton</h1>
+
+  <!-- Buttons -->
+  <center>
+    <input type="button" value="Static" onclick="makeStatic()">
+    <input type="button" value="Relative" onclick="makeRelative()">
+    <input type="button" value="Absolute" onclick="makeAbsolute()">
+  </center>
+
+  <br>
+
+  <!-- Image -->
+  <center>
+    <img src="../images/image_3.png" id="moveImg" width="200" height="200">
+  </center>
+
+  <p>
+    Badminton is a racquet sport played using racquets to hit a shuttlecock across a net.
+    Although it may be played with larger teams, the most common forms of the game are
+    singles and doubles.
+  </p>
+  <form>
+
+
+  <section>
+    <p>
+      The game developed in British India from the earlier game of battledore and shuttlecock.
+      The Badminton World Federation (BWF) is the international governing body for the sport.
+    </p>
+  </section>
+
+
+
+<div id="Badminton" style="position:absolute; top:115px; left:20px;">
+<img src="../images/image_3.png" height="150" width="120" alt="Badminton Championship Turnament">
+</div>
+
+
+<img src="../images/image_3.png" class="float_right"> 
+<p >
+<label>
+x-coordinate:                                        
+<input type="text" id="leftCoord" size="3" >           
+</label><br>
+
+<label>                      
+y-coordinate:
+<input type="text" id="topCoord" size="3" >
+</label><br>
+
+<input type="button" value="Move it"
+onclick="moveIt('Badminton',
+document.getElementById('topCoord').value,
+document.getElementById('leftCoord').value)">
+</p>
+</form> 
+</body>
+</html>

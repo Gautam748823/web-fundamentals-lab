@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<title>Registration Page</title>
+
+<!-- Simple CSS -->
+<style>
+  body {
+    background-color: lightyellow;
+    font-family: 'Times New Roman';
+  }
+
+  h3 {
+    color: darkorange;
+  }
+
+  form {
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid red;
+  }
+
+  input {
+    padding: 5px;
+  }
+
+  input:hover {
+    color: red;
+  }
+</style>
+
+</head>
+
+<body>
+
+<h3 align="center">Registration</h3>
+
+<form align="center" onsubmit="return validateForm()">
+
+Name:
+<input type="text" id="name"><br><br>
+
+Email:
+<input type="text" id="email"><br><br>
+
+Password:
+<input type="password" id="password"><br><br>
+
+Mobile:
+<input type="text" id="mobile" maxlength="10"><br><br>
+
+Gender:
+<input type="radio" name="g"> Male
+<input type="radio" name="g"> Female
+<br><br>
+
+<input type="submit" value="Register">
+<input type="reset" value="Reset">
+
+</form>
+
+<script src="res.js"></script>
+</body>
+</html>

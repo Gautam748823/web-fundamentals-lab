@@ -1,0 +1,62 @@
+/* Universal selector */
+  body {
+    background-color: lightyellow;
+  }
+
+* {
+  font-style: times roman;
+  font-weight: bold;
+}
+
+/* Heading style */
+h1 {
+  font-size: 32pt;
+  color: blue;
+}
+
+/* Class selector */
+p.one {
+  font-family: Courier;
+  font-size: 25pt;
+  color: green;
+}
+
+/* Another class */
+.two {
+  font-family: "comic sans ms";
+  font-size: 30pt;
+  font-variant: small-caps;
+  color: maroon;
+ /* background-image: url("image_1.png"); */  /* element background */
+ /* background-repeat: no-repeat;*/
+}
+
+/* Paragraph class */
+p.three {
+  font-family: "Rockwell";
+  font-size: 24pt;
+  font-variant: small-caps;
+  color: purple;
+}
+
+/* ID selector */
+#new {
+  color: blue;
+  font-size: 24pt;
+}
+
+/* Input effects */
+input:hover {
+  color: greenyellow;
+}
+
+input:focus {
+  color:orange;
+}
+
+/* Page background 
+body {
+  background-image: url("image_1.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}*/

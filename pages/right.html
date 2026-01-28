@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/style.css">
+<script>   /* This script moves an image when the button is clicked */
+  function moveImage() {
+    document.getElementById("myimg").style.top = "600px";  /* This script moves an image when the button is clicked */
+    document.getElementById("myimg").style.left = "1000px"; /* This script moves an image when the button is clicked */
+  }
+</script>
+
+<title>CSS Experiment</title>
+</head>
+
+<body>
+<center>
+
+<h1>Elite Sports Store</h1>
+
+<p class="one">Welcome to Online Sports Complex</p>
+
+<p class="two">Sports Complex </p>
+  
+<h2 class="two">Establishment of 3 years</h2>
+
+<p class="three">Player Portal</p>
+
+<p id="new">Information</p>
+
+<form>
+<label>Username:
+<input type="text" name="username">
+</label><br><br>
+
+<label>Password:
+<input type="password" name="password">
+</label><br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+
+<br>
+
+<!-- DIV & SPAN (Layers) -->
+<div style="background-color:greenyellow;">
+  <span style ="color: blue;">Please</span> Upload 
+  <span style="color:red;">More</span>
+  <span style="color:purple;">Details</span>
+</div>
+<h3>Moving the Image</h3> <!-- This script moves an image when the button is clicked -->
+
+<img id="myimg" src="../images/image_1.png" width="100" height="100"
+     style="position:absolute; top:100px; left:50px;">
+
+<br><br><br><br><br>
+
+<button onclick="moveImage()">Move Image</button>
+
+
+</center>
+</body>
+</html>

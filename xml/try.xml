@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xml.xsl"?>
+
+<!DOCTYPE SPORTS[
+<!ELEMENT SPORTS (INFORMATION)>
+<!ELEMENT INFORMATION (ITEM+)>
+<!ELEMENT ITEM (sport_name,brand,product_id,category,price,stock)>
+<!ELEMENT sport_name (#PCDATA)>
+<!ELEMENT brand (#PCDATA)>
+<!ELEMENT product_id (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT stock (#PCDATA)>
+
+<!ENTITY a "ES-101">
+<!ENTITY b "ES-102">
+<!ENTITY c "ES-103">
+<!ENTITY d "ES-104">
+]>
+
+<SPORTS>
+    <INFORMATION>
+        <ITEM>
+            <sport_name>Cricket Bat</sport_name>
+            <brand>SG</brand>
+            <product_id>&a;</product_id>
+            <category>Cricket</category>
+            <price>3500</price>
+            <stock>25</stock>
+        </ITEM>
+
+        <ITEM>
+            <sport_name>Football</sport_name>
+            <brand>Nike</brand>
+            <product_id>&b;</product_id>
+            <category>Football</category>
+            <price>1800</price>
+            <stock>40</stock>
+        </ITEM>
+
+        <ITEM>
+            <sport_name>Badminton Racket</sport_name>
+            <brand>Yonex</brand>
+            <product_id>&c;</product_id>
+            <category>Badminton</category>
+            <price>2200</price>
+            <stock>30</stock>
+        </ITEM>
+
+        <ITEM>
+            <sport_name>Table Tennis Bat</sport_name>
+            <brand>Butterfly</brand>
+            <product_id>&d;</product_id>
+            <category>Table Tennis</category>
+            <price>1200</price>
+            <stock>20</stock>
+        </ITEM>
+    </INFORMATION>
+</SPORTS>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+  <title>CYCLE</title>
+
+  <!-- CSS Section -->
+  <style>
+    body{
+      background-color: lightyellow;
+      font-family: 'Times New Roman';
+    }
+
+    h1{
+      text-align: center;
+      color: purple;
+    }
+
+    p{
+      width: 80%;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    section{
+      width: 80%;
+      margin: 20px auto;
+      background: lightcyan;
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 15px;
+    }
+  </style>
+
+  <!-- JavaScript for Experiment-3(a) -->
+  <script>
+    function makeStatic() {
+      var img = document.getElementById("moveImg");
+      img.style.position = "static";
+      img.style.top = "0px";
+      img.style.left = "0px";
+    }
+
+    function makeRelative() {
+      var img = document.getElementById("moveImg");
+      img.style.position = "relative";
+      img.style.top = "20px";
+      img.style.left = "30px";
+    }
+
+    function makeAbsolute() {
+      var img = document.getElementById("moveImg");
+      img.style.position = "absolute";
+      img.style.top = "300px";
+      img.style.left = "200px";
+    }
+  </script>
+  <!-- Cursor Position Section  from line Number 58,59,60,61,62,63-->
+  <script>
+  function showPosition(event) {
+    document.getElementById("pos").innerHTML =
+      "X : " + event.clientX + " , Y : " + event.clientY;
+  }
+</script>
+
+
+</head>
+
+<body>
+
+  <h1>Cycle</h1>
+
+  <!-- Buttons -->
+  <center>
+    <input type="button" value="Static" onclick="makeStatic()">
+    <input type="button" value="Relative" onclick="makeRelative()">
+    <input type="button" value="Absolute" onclick="makeAbsolute()">
+  </center>
+
+  <br>
+
+  <!-- Image (Static by default) -->
+  <center>
+    <img src="../images/image_7.png" id="moveImg" width="120" height="120">
+  </center>
+
+  <p>
+    A bicycle, also called a bike or cycle, is a human-powered or motor-powered vehicle
+    with two wheels attached to a frame. Cycling is used for travel, exercise, and sport.
+  </p>
+
+  <section>
+    <p>
+      Cycles are eco-friendly and help keep us fit. Different types of cycles are designed
+      for different terrains such as road, mountain, and hybrid bicycles.
+    </p>
+  </section>
+
+  <!-- Cursor Position Section from the line number 98 to 107 -->
+<h3 style="text-align:center;">Cursor Position</h3>
+<p id="pos" style="text-align:center;">Move the mouse inside the box</p>
+
+<div onmousemove="showPosition(event)"
+     style="height:200px; border:5px solid black; margin:20px ;text-align:center;">Move your mouse here</div>
+
+
+</body>
+</html>
