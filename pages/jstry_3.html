@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Sum of numbers</title>
+        <script type="text/javascript">
+            function calcSum(){
+                value1=parseInt(document.mainform.textbox1.value);
+                value2=parseInt(document.mainform.textbox2.value);
+                sum=value1+value2;
+                document.mainform.textboxSum.value=sum;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="mainform">
+            <input type="text" name="textbox1"/><br/>
+            <input type="text" name="textbox2"/><br/>
+            <input type="button" value="Process" onclick="calcSum()"/>
+            <input type="text" name="textboxSum" readonly="readonly"/>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!--Write a JavaScript code to validate the following fields of the
+registration page.-->
+
+<html>
+    <head>
+        <title>Registration Page validation</title>
+        <script type="text/javascript">
+            function validateform(){
+                var name=document.regform.name.value;
+                var email=document.regform.email.value;
+                var password=document.regform.password.value;
+                var phone=document.regform.phone.value;
+                var emailpattern=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                var phonpattern=/^\d{10}$/;
+                var passwordpattern=/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{10,}$/;
+                var namepattern=/^[a-zA-Z\s]+$/;
+                if (name==''){
+                    alert("Name must be filled out");
+                    return false;
+                }
+                if (email==''){
+                    alert("Email must be filled out");
+                    return false;
+                }
+                if (!emailpattern.test(email)){
+                    alert("Invalid email address");
+                    return false;
+                }
+                if (password==''){
+                    alert("Password must be filled out");
+                    return false;
+                }
+                if (phone==''){
+                    alert("Phone number must be filled out");
+                    return false;
+                }
+                if (!phonpattern.test(phone)){
+                    alert("Invalid phone number. It should be 10 digits.");
+                    return false;
+                }
+                if (!passwordpattern.test(password)){
+                    alert("Password must be at least 10 characters long and contain at least one letter and one number.");
+                    return false;
+                }
+                if (!namepattern.test(name)){
+                    alert("Name can only contain letters and spaces.");
+                    return false;
+                }
+                alert("Registration successful!");
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="regform" onsubmit="return validateform()">
+            Name: <input type="text" name="name"/><br/>
+            Email: <input type="text" name="email"/><br/>
+            Password: <input type="password" name="password"/><br/>
+            Phone: <input type="text" name="phone"/><br/>
+            <input type="submit" value="Register"/>
+        </form>
+
+    </body>
+</html>
