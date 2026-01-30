@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title> Class Work</title>
+    </head>
+    <body>
+        <button onclick="hide_Image">Hide/Show</button>
+        <input type="text" id ="text_input" />
+        <input type="button" value = "Change background color" onclick="document.body.style.backgroundColor = document.getElementById('text_input').value "/>
+        <br><br>
+        <img id="image_1" src="images/image_1.png" alt="Image" width="600" height="600">
+    </body>
+    <script>
+        function hide_Image(){
+            var img = document.getElementById("image_1");
+            if (img.style.visibility === "hidden") 
+            {
+                img.style.visibility = "visible";
+            } else {
+                img.style.visibility = "hidden";
+            }
+        }
+    </script>
+</html>
