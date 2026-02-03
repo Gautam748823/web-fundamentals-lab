@@ -1,0 +1,17 @@
+<html>
+    <body>
+        Email:<input type="text" id="email"><br>
+        <button onclick="checkemail()">Click To Check</button>
+        <script>
+            function checkemail(){
+                var email=document.getElementById("email").value;
+                if(/^[a-zA-Z0-9._]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/.test(email)){
+                    alert("Valid Email");
+                }
+                else{
+                    alert("Invalid Email");
+                }
+            }
+        </script>
+    </body>
+</html>

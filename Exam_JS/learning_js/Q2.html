@@ -1,0 +1,22 @@
+<!--Regular Expression (Regex)
+
+Only letters allowed: A–Z and a–z
+
+No spaces, no numbers, no symbols-->
+
+<html>
+    <head>
+        <title>Checkin regular expression</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function checkString(str){
+                return /^[a-zA-Z]+$/.test(str);
+            }
+            document.write(checkString("GAUTAM") + "<br>");
+            document.write(checkString("Gandhi1918") + "<br>");
+            document.write(checkString("HelloWorld") + "<br>");
+            document.write(checkString("12345678910") + "<br>");
+        </script>
+    </body>
+</html>

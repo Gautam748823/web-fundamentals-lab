@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <p id="date"></p>
+        <script>
+            var d=new Date();
+            var day=d.getDate();
+            var month=d.getMonth()+1;
+            var year=d.getFullYear();
+            document.getElementById("date").innerHTML=day+"-"+month+"-"+year;
+        </script>
+    </body>
+</html>

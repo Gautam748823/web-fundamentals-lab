@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <p id="one">Id text</p>
+        <p class="many">Class text 1</p>
+        <p class ="many">Class text 2</p>
+        <button onclick="change()">click me</button>
+        <script>
+            function change(){
+                document.getElementById("one").innerHTML="Changed Id text";
+                document.getElementsByClassName("many")[0].innerHTML="Changed Class ";
+                document.querySelector(".many").style.color="red";
+            }
+        </script>
+    </body>
+</html>

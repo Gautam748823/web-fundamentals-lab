@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>checking valid email id , regular expression</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function checkEmail(email){
+                return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
+            }
+            document.write(checkEmail("gaita@gmail.com") + "<br>");
+            document.write(checkEmail("gautam@.com") + "<br>");
+            document.write(checkEmail("12345@gmail.comm") + "<br>");
+            document.write(checkEmail("gautam@gmail.com") + "<br>");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Username:
+<input type="text" id="user"><br><br>
+
+Password:
+<input type="password" id="pass"><br><br>
+
+<button onclick="check()">Login</button>
+
+<script>
+function check() {
+  var u = document.getElementById("user").value;
+  var p = document.getElementById("pass").value;
+
+  if (u == "" || p == "") {
+    alert("Fill all fields");
+  } else {
+    alert("Login Successful");
+  }
+}
+</script>
+
+</body>
+</html>

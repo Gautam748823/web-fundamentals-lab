@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iframe Example</title>
+</head>
+<body>
+
+  <iframe src="http://dreamtechpress.com"></iframe>
+  <iframe src="http://dreamtechpress.com"></iframe>
+  <iframe src="http://dreamtechpress.com"></iframe>
+
+  <script type="text/javascript">
+    var frames = document.getElementsByTagName("iframe");
+
+    for (var i = 0; i < frames.length; i++) {
+      frames[i].src = "http://dreamtechpress.com";
+    }
+  </script>
+
+</body>
+</html>

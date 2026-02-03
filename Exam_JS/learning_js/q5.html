@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Random Color Generator in the Background</title>
+        <h1>Random Color Generator when the button is clicked</h1>
+        <style>
+        #box{
+            width:200px;
+            height:200px;
+            background-color:lightgrey;
+            border:2px solid black;
+            margin-bottom:10px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id ="box"></div>
+        <button onclick="changecolor()">Change Color</button>
+        <script>
+            function changecolor(){
+                var box=document.getElementById("box");
+                var randomColor='#'+Math.floor(Math.random()*16777215).toString(16);
+                document.getElementById("box").style.backgroundColor = randomColor;
+            }
+        </script>
+
+    </body>
+</html>

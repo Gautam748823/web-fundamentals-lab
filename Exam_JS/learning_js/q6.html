@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <script type="text/javascript"></script>
+        Amount:<input type="text" id="amt"><br><br>
+        Interest:<input type="text" id="rate"><br><br>
+        <button onclick="calculate()">Calculator</button>
+        <script>
+            function calculate(){
+                var amt=Number(document.getElementById("amt").value);
+                var rate=Number(document.getElementById("rate").value);
+                var Interest=(amt*rate)/100;
+                alert("The Interest is: "+Interest);
+            }
+        </script>
+    </body>
+</html>

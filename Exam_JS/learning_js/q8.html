@@ -1,0 +1,17 @@
+<html>
+    <body>
+        Password:<input type="text" id="pwd"><br><br>
+        <button onclick="checkPwd()" >Clik Me</button>
+        <script>
+        function checkPwd(){
+            var pwd=document.getElementById("pwd").value;
+            if (/^(?=.*[A-Z])(?=.*[@#$!%*?&]).{8,}$/.test(pwd)){
+                alert("Valid Password");
+            }
+            else{
+                alert("Invalid Password");
+            }
+        }
+        </script>
+    </body>
+</html>

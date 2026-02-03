@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+DOB:
+<input type="text" id="dob" >
+<br><br>
+
+PIN:
+<input type="text" id="pin">
+<br><br>
+
+<button onclick="check()">Submit</button>
+
+<p id="msg"></p>
+
+<script>
+function check() {
+  var dob = document.getElementById("dob").value;
+  var pin = document.getElementById("pin").value;
+
+  if (!/^[0-9]{2}-[0-9]{2}-[0-9]{4}$/.test(dob)) {
+    alert("DOB must be in DD-MM-YYYY format");
+  }
+  else if (!/^[0-9]{6}$/.test(pin)) {
+    alert("PIN must be exactly 6 digits");
+  }
+  else {
+    alert("Both DOB and PIN are valid");
+  }
+}
+</script>
+
+</body>
+</html>

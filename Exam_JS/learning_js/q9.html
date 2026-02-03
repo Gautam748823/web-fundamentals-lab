@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="out"></p>
+
+<script>
+  var numbers = [1, 2, 3, 4];
+
+  numbers.push(5);
+  numbers.pop();
+
+  var double = numbers.map(function(n) {
+    return n * 2;
+  });
+
+  var even = numbers.filter(function(n) {
+    return n % 2 == 0;
+  });
+
+  var sum = numbers.reduce(function(total, n) {
+    return total + n;
+  }, 0);
+
+  document.getElementById("out").innerHTML =
+    "Array: " + numbers + "<br>" +
+    "Map: " + double + "<br>" +
+    "Filter: " + even + "<br>" +
+    "Reduce (Sum): " + sum;
+</script>
+
+</body>
+</html>

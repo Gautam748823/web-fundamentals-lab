@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3 onmouseover="showMsg()">Move mouse here</h3>
+
+<button onclick="changeBg()">Click Me</button>
+
+<script>
+var colors = ["red", "blue", "green", "yellow", "orange"];
+
+function changeBg() {
+  document.body.style.backgroundColor =
+    colors[Math.floor(Math.random() * colors.length)];
+}
+
+function showMsg() {
+  alert("Mouse is over the text");
+}
+</script>
+
+</body>
+</html>
