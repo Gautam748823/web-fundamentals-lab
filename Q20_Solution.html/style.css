@@ -1,0 +1,33 @@
+/*📌 Requirements
+🔹 Product Card
+
+Padding: 20px
+
+Margin: 15px
+
+Border: 2px solid black
+
+Width: 300px
+
+🔹 Alert Box
+
+Background color: light yellow
+
+Padding: 10px
+
+Border-radius: 8px
+
+Drop shadow*/
+
+.product-card{
+    padding:20px;
+    margin:15px;
+    border:2px solid black;
+    width:300px;
+}
+.alert-box{
+    background-color: lightyellow;
+    padding:10px;
+    border-radius:8px;
+    box-shadow: 2px 2px 5px grey;
+}

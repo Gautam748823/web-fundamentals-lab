@@ -1,0 +1,35 @@
+/*📌 Requirements
+
+All headings:
+
+Font: Arial
+
+Bold
+
+Italic
+
+Font size: 24px
+
+Paragraph text:
+
+Font: Times New Roman
+
+Normal weight
+
+Line height: 1.5
+
+Font size: 16px*/
+
+h1,h2,h3,h4,h5,h6{
+    font-family:Arial;
+    font-weight:bold;
+    font-style:italic;
+    font-size:24px;
+
+}
+p{
+    font-family: 'Times New Roman';
+    font-weight:normal;
+    line-height:1.5;
+    font-size:16px;
+}
