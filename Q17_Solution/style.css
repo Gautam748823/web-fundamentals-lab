@@ -1,8 +1,8 @@
 table{
-    width:600px;
+    width:400px;
     border-collapse: collapse;
 }
 th,td{
-    border:1px solid black;
+    border:1px solid darkblue;
     padding:8px;
 }
