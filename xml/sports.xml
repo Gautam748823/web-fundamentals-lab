@@ -47,13 +47,6 @@
             <stock>30</stock>
         </ITEM>
 
-        <ITEM>
-            <sport_name>Table Tennis Bat</sport_name>
-            <brand>Butterfly</brand>
-            <product_id>&d;</product_id>
-            <category>Table Tennis</category>
-            <price>1200</price>
-            <stock>20</stock>
-        </ITEM>
+
     </INFORMATION>
 </SPORTS>

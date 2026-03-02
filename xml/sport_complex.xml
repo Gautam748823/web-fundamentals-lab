@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="Style.xsl"?>
+
+<SPORTS>
+<INFORMATION>
+
+<ITEM>
+<sport_name>Cricket Bat</sport_name>
+<brand>SG</brand>
+<product_id>ES101</product_id>
+<category>Cricket</category>
+<price>3500</price>
+<stock>25</stock>
+</ITEM>
+
+<ITEM>
+<sport_name>Football</sport_name>
+<brand>Nike</brand>
+<product_id>ES102</product_id>
+<category>Football</category>
+<price>1800</price>
+<stock>40</stock>
+</ITEM>
+
+</INFORMATION>
+</SPORTS>

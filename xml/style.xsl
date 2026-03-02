@@ -9,24 +9,20 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <h2 align="center">ELITE SPORTS STORE</h2>
 
-<table border="2" align="center" cellpadding="40" cellspacing="0">
-<tr bgcolor="cadetblue">
-    <th><font color="black">Sport Item</font></th>
-    <th><font color="black">Brand</font></th>
-    <th><font color="black">Product ID</font></th>
-    <th><font color="black">Category</font></th>
-    <th><font color="black">Price</font></th>
-    <th><font color="black">Stock</font></th>
+<table border="1" align="center">
+<tr bgcolor="lightblue">
+    <th>Sport Item</th>
+    <th>Brand</th>
+    <th>Product ID</th>
+    <th>Category</th>
+    <th>Price</th>
+    <th>Stock</th>
 </tr>
 
 <xsl:for-each select="SPORTS/INFORMATION/ITEM">
 <tr>
     <td><xsl:value-of select="sport_name"/></td>
-    <td bgcolor="lightyellow">
-        <b><font color="black">
-        <xsl:value-of select="brand"/>
-        </font></b>
-    </td>
+    <td><xsl:value-of select="brand"/></td>
     <td><xsl:value-of select="product_id"/></td>
     <td><xsl:value-of select="category"/></td>
     <td><xsl:value-of select="price"/></td>
